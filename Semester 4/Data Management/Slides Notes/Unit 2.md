@@ -1,0 +1,70 @@
+# Unit 2
+- #### Entity/Relationship (ER) model:
+	- Provides a common, informal and convenient method for communication between application end users (customers) and the database designers to model the information's structure.
+- #### Entity:
+	- This is an *object*. Cannot be defined even close to a formal way. Examples:
+		- Bob
+		- Boston
+		- The country whose capital is Paris (There is only one such country, so it is completely specified)
+	- Entity Set Examples:
+		- ![[Pasted image 20220625003832.png|200]]
+	- **Strong Entity:** Its elements can be identified by the values of their attributes, that is, it has a (primary) key made of its attributes.
+	- **Weak entity:** Its elements cannot be identified by the values of their attributes: there is no primary key made from its own attributes. 
+		- A weak entity is indicated by a *thick lines* around it.
+		- Attributes of a weak entity which sets to distinguish among entities is a called as a **discriminant,** which is indicated by *double underline*.
+- #### Relationship:
+	- Entities participate in relationships with each other. Examples:
+		- Alice and Boston are in relationship *likes* (Alice *likes* Boston)
+		- Bob and Atlanta are not in this relationship.
+	- Relationships are denoted by *diamonds*, to which the participating entities are "attached".
+	- ![[Screenshot_20220625_010032.png|300]]
+	- **Binary Relationship:** One-to-One relationships.
+	- **Ternary Relationship:** Relationships between tuples.
+	- **Relationship with Nondistinct Entity Sets:** Relationship with itself.
+- #### Attribute:
+	- Examples:
+		- Age is a property of persons
+		- Size is a property of cities
+	- Attributes Examples:
+		- ![[Pasted image 20220625003924.png|250]]
+	- Attributes can be:
+		- ![[Pasted image 20220625004125.png|450]]
+		- **Base:** or also known as **derived** which is denoted by dashed ellipses (such as *Age*, derived from *DOB* and the *current* *date*)
+		- **Simple:** or also known as **composite** which has their component attributes attached to them (such as *Address*, which as *Number* and *Street* attacked to it).
+		- **Singlevalued:** or also known as **multivalued** with unspecified in advance number of values denoted by thick-lined ellipses (such as *child*; a person may have any number of children)
+- #### Keys
+	- Some subset of the attributes of an entity has the property that two different entities in an entity set must differ on the values of these attributes.
+	- Such a set of attributes is called a **superkey**.
+	- A minimal superkey is called a **key**.
+	- *Superkey values can identify an individual entity, but there may be unnecessary attributes.*
+		- Social Security Number + Last Name form a superkey, which is not a key, as Social Security Number is enough to identify a person.
+		- Longitude, Latitude form a superkey, which is also a key.
+	- *Key value can identity an individual entity, but there are no unnecessary attributes*.
+		- Longitude, Latitude form a superkey, which is also a key.
+	- *Every key is a superkey*
+- #### Primary Keys
+	- If an entity set has one or more keys, one of them (no formal rule which one) is chosen as the **primary key**.
+	- In the ER diagram, the attribute of the primary key are *underlined*.
+	- ![[Screenshot_20220625_005652.png|450]]
+	
+- #### Aggregation: Relationships as Entities
+	- Relationships can be considered as Entities.
+	- Relationship is "made into" and entity by putting it into a **rectangle**.
+	- ![[Screenshot_20220626_231058.png]]
+- #### The ISA Relationship
+	- The subset relationship between the set and its subset is called **ISA**, meaning *is a*.
+	- ![[Screenshot_20220625_010845.png|450]]
+	- Elements of the subset have all the attributes and relationships as the elements of the set: they are in the *original* entity set.
+	- The elements of the subset are weak entities.
+	- The set and the subsets are sometimes referred to as **class** and **subclasses**.
+	- A specific ISA could be:
+		- **Disjoint:** no entity could be in more than one subclass.
+		- **Overlapping:** an entity could be in more than one subclass.
+		- **Total:** every entity has to be in at least one subclass.
+		- **Partial:** an entity does not have to be in any subclass.
+- #### Cardinality Constraints
+	- It can be specified how many times each entity from some entity set can participate in some relationship, in every instance of the database.
+	- `0..*` means no constraint. 
+	- ![[Screenshot_20220625_011423.png|350]]
+		- Every person likes exactly 1 country.
+		- Every country is liked by 2 or 3 persons. 

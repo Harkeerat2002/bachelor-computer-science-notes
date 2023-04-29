@@ -1,0 +1,2 @@
+- In **broadcast routing**, the network layer provides a service of delivering a packet sent from a source node to all other nodes in the network
+- **Multicast routing** enables a single source node to send a copy of a packet to a subset of the other network nodes.

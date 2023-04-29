@@ -1,0 +1,20 @@
+- #### CREATE for Defining Tables
+	- ##### Specifying Domains
+	- ##### PRIMARY KEY
+	- ##### UNIQUE
+	- ##### FOREIGN KEY
+	- ##### NOT NULL
+	- ##### CHECK
+	- ##### DEFAULT
+- #### Unknowns
+- #### Maintenance of Referential Integrity
+- #### Constraint Checking
+	- ##### NOT DEFERRABLE
+	- ##### DEFERRABLE
+- #### ASSERTION
+- #### Trigger
+- #### Views
+- #### ALTER
+- #### DROP
+- #### REPLACE
+- #### Privileges

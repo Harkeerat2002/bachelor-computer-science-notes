@@ -1,0 +1,31 @@
+# Unit 3
+- #### Sets:
+	- A **set** is a bag of elements, some/all of which could be sets themselves.
+- #### Relations and Tables
+	- ![[Screenshot_20220628_021019.png|200]]
+	- A **relation** is such a table.
+- #### Relational Schema
+	- **Relation Schema** defines a set of relations.
+- #### Keys
+	- A set of columns in a relation is a **superkey** if an only any two tuples that equal to the elements of these columns are (completely equal).
+	- *A relation always has at least one superkey.*
+	- A minimal superkey, is a **key**.
+	- Exactly one key is chosen as **primary key**.
+	- Other keys are just keys. They are sometimes called **candidate keys**.
+	- **Foregin Key** = A binary Many-to-one relationship beteen tables (Partial FUnction)
+- #### Implementing an ER diagram as a relational schema
+	- Generally, but not always:
+		- *An entity set is converted into a table.*
+		- *A relationship is converted into a table.*
+- #### Relational Implementation Example
+	- ![[Screenshot_20220628_021840.png|500]]
+- #### Cardinality Constraints
+	- ![[Screenshot_20220628_021725.png|500]]
+- #### Crow's Feet Notation
+	- ##### End of Lines
+		- ![[Screenshot_20220628_021812.png]]
+	- ##### Pattern of Lines
+		- The line is *dashed* if the primary key of the *many sides* does not include the primary key of the *one side*.
+- #### Class Example
+	- ![[Screenshot_20220628_022103.png]]
+	- ![[Screenshot_20220628_022119.png]]

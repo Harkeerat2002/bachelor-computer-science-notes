@@ -1,0 +1,3 @@
+- Some things only few companies can do, and there is no means to go compete in that section. (e.g, Google, Microsoft)
+- Companies look Google can do much more that other companies, because of the large amount of data they have.
+- 

@@ -1,0 +1,50 @@
+## 2.2.1 Overview of HTTP
+- Until the early 1990s the Internet was mainly used to connect academic institutions.
+- In 1994, a new application was born: the World Wide Web (www)
+- A web page consists of objects
+- Objects can be HTML files, JPEG images, Java applets, audio files, etc.
+- A web page consists of base **HTML file,** which includes several **referenced objects**
+- Each object is addressable by a **Uniform Resource Locator (URL)**
+- **Uniform Resource Locator (URL)**
+	- A URL is a “reference to a Web resource that specified its **location** on a computer network and a **mechanism** for retrieving it”
+- ![[Untitled 6.png]]
+- The client and the server talk to each other by exchanging **HTTP messages**
+- The **HyperText Transfer Protocol (HTTP)** is the Web’s application-layer protocol
+- ![[Untitled 7.png|450]]
+- HTTP relies on a Client/Server Model
+	- **Client:**
+        - Browser that requests, receives, (using HTTP protocol) and “displays” Web objects
+	- **Server:**
+	- Web server sends (using HTTP protocol) objects in response to requests
+- HTTP uses TCP as its underlying transport protocol.
+	- Client initiates TCP connection (creates socket) to server
+	- Server accepts TCP connection from client
+	- HTTP messages (application-layer protocol messages) exchanged between browser (HTTP client) and Web server (HTTP server)
+	- TCP connection closed
+- HTTP is stateless
+	- HTTP server maintains no information about past clients requests
+	- Protocols that, in contrast to HTTP, maintain “state” are complex
+
+## 2.2.2 Non-Persistent and Persistent Connections
+- ### HTTP with Non-persistent Connections
+	- ![[Untitled 8.png]]
+	- **Round-Trip Time:**
+	- It is the time it takes for a small packet to travel from client to server and then back to the client
+	- Time for a small packet to travel from client to server and back
+	- The RTT includes packet-propagation delays, packet-queuing delays in intermediate routers and switches, and packet-processing delays.
+	- ![[Untitled 9.png|550]]
+	- HTTP response time
+		- One RTT to initiate TCP connection
+		- One RTT for HTTP request and first few bytes of HTTP response to return
+	- File Transmission Time
+		- Non-persistent HTTP response time = 2 RTT + File Transmission time
+	- **HTTP with Persistent Connections**
+		- *Non-persistent HTTP issues*
+			- Require 2 RTTs per object
+			- OS overhead for each TCP connection
+			- Browsers often open parallel TCP connections to fetch referenced objects.
+		- *Persistent HTTP*
+			- Server leaves connections open after sending response
+			- Subsequent HTTP messages between same client/server sent over open connection
+			- Client sends requests as soon as it encounters a referenced object
+			- As little as one RTT for all the referenced objects

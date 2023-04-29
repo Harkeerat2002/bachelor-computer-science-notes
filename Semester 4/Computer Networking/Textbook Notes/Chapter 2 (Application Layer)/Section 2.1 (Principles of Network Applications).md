@@ -1,0 +1,129 @@
+- In the web application there are two distinct programs that communicate with each other:
+    - The browser program running in the user’s host (desktop, laptop, tablet, smartphone, and so on)
+    - The web server program running in the web server host.
+- When developing your new application, you need to write software that will run on multiple end systems.
+![[Untitled.png|375]]
+- Creating a **network application** means writing **programs** that run on (different) end system and **communicate** over the network
+- For instance, a web server software communicates with browser software
+
+## 2.1.1 Network Application Architectures
+- From the application developer's perspective, the network architecture is fixed and provides a specific set of services to applications.
+- The **application architecture,** on the other hand, is designed by the application developer and dictates how the application is structured over the various end system.
+- In choosing the application architecture, an application developer will likely draw on one of the two predominant architectural paradigms used in modern network applications:
+    - Client-server Architecture
+    - Peer-to-Peer (P2P) architecture
+- ### Client-Server Architecture
+- ![[Untitled 1.png|275]]
+	- There is an always-on host, called the **server**, which services requests from many other hosts, called **clients.**
+	- When a web server receives a request for an object from a client host, it responds by sending the requested object to the client host.
+		- Note that with the Client-server architecture, clients do not directly communicate with each other; for example, in the web application, two browsers do not directly communicate.
+	- **Server:**
+		- Always-on host
+		- Permanent IP address
+		- Data Centers for scaling
+	- **Clients:**
+		- Communicate with server
+		- May be intermittently connected
+		- May have dynamic IP addresses
+		- Do not communicate directly with each other
+- ### P2P Architecture
+- ![[Untitled 2.png|225]]
+	- No always-on server
+	- Arbitrary end systems directly communicate
+	- Peers request service from other peers, provide service in return to other peers
+		- Self scalability: New peers bring new service capacity, as well as new service demands
+	- Peers are intermittently connected and change IP addresses
+		- Complex management
+
+## 2.1.2 Processes Communicating
+- A **process** is a program running within an end system
+- Within the same host, two processes communicate using **inter-process communication** (define by OS)
+- Processes in different hosts communicate by exchanging **messages**
+- ### Client and Server Processes:
+	- A **client process** is the process that initiates communication
+	- A **server process** is the process that waits to be contacted
+	- Example:
+		- With the Web, a browser is a client process and a Web server is a server process
+- ### The Interface Between the Process and the Computer Network:
+	- Most applications consist of pairs of communicating processes, with the two processes in each pair sending messages to each other.
+	- Any message sent from one process to another must go through the underlying network.
+	- A process sends messages into, and receives messages from, the network through a software interface called a **socket.**
+	- ![[Untitled 3.png|550]]
+	- The above figure shows socket communication between two processes that communicate over the Internet.
+	- As shown in this figure, a socket is the interface between the application layer and the transport layer within a host.
+	- It is also referred to as the **Application Programming Interface (API)** between the application and the network, since the socket is the programming interface with which network applications are built.
+	- The application developer has control of everything on the application-layer side of the socket but has little control of the transport-layer side of the socket.
+	- The only control that the application developer has on the transport-layer side is:
+	    - The choice of transport protocol
+	    - Perhaps the ability to fix a few transport-layer parameters such as maximum buffer and maximum segment sizes
+- ### Addressing Processes
+	- To receive messages, the process must have an identifier
+	- Host device has unique IP address
+		- 32 bits (IPv4); 128 bits (IPv6)
+	- Many processes can be running on same host, thus, IB address does not suffice to identify destination process
+	- Identifier includes both IP address and the **port number** associated with process on host.
+	- Example port numbers:
+		-  HTTP server: 80
+		- Mail server: 25
+
+## 2.1.3 Transport Services Available to Applications
+- Many networks, including the Internet, provide more than one transport-layer protocol.
+- When an application is being developed, one must choose one of the available transport-layer protocols.
+- In order to choose one, one would need to see which services provided by the available transport-layer protocols provides the best match which the application needs
+- The possible services can be classified along four dimensions:
+    - **Reliable Data Transfer**
+    - **Throughput**
+    - **Timing**
+    - **Security**
+- ### Reliable Data Transfer
+	- Transport Service may need to provide a reliable data transfer
+	- A guarantee that the data sent by one end of the application is delivered correctly and completely to the other end of the application.
+	- If a protocol provides such a guaranteed data delivery service, it is said to provide **reliable data transfer.**
+	- Some applications (e.g., audio) can tolerate some loss
+	    - **Loss-tolerant** applications
+	- Other applications (e.g., file transfer, web transactions) require 100% reliable data transfer
+	    - Need a **reliable data transfer**
+- ### Throughput
+	- A transport service may need to provide guaranteed available throughput at some specific rate
+	- Some applications require a minimum amount of throughput to be “effective”
+	- Other applications — called **elastic** applications — make use of whatever throughput they get.
+- ### Timing
+	- A transport service may need to provide timing guarantees available throughput at some specified rate
+	- Some applications (e.g., Internet Telephony, interactive games) require low delay to be “effective”
+- ### Security
+	- A transport service may need to provide an application with one or more security services
+	- Encryption, data integrity ...
+
+## 2.1.4 Transport Services Provided by the Internet
+- The Internet makes two transport protocols available to applications, UDP and TCP.
+- Each of these protocols offers a different set of services to the invoking applications.
+- ![[Untitled 4.png]]
+- ### TCP Service
+	- Connection-oriented Service
+	- Reliable Transport between sending and receiving process
+	- Flow Control
+		- The sender won’t overwhelm the receiver
+	- Congestion Control
+		- Throttle sender when network overloaded
+	- TCP does NOT provide
+		- Timing, minimum throughput guarantee, security
+- ### UDP Service
+	- Unreliable data transfer between sending and receiving process
+	- Does NOT provide
+		- Reliability, flow control, congestion control, timing, throughput guarantee, security, or connection setup.
+- ![[Untitled 5.png]]
+
+## 2.1.5 Application-Layer Protocols
+- An **application-layer protocol** defines how an application’s processes, running on different end systems, pass messages to each other.
+- In particular, an application-layer protocol defines:
+	- The types of messages exchanged, for example, request messages and response messages
+	- The syntax of the various message types, such as the fields in the message and how the fields are delineated
+	- The semantics of the fields, that is, the meaning of the information in the fields
+	- Rules for determining when and how a process sends messages and responds to messages
+- ### Open vs Proprietary Protocols
+	- Open Protocols:
+		- Defined in RFCs
+		- Allows for interoperability
+		- e.g., HTTP, SMTP
+	- Proprietary Protocols
+		- E.g., Skype

@@ -1,0 +1,27 @@
+# Unit 4
+- The *order* of *rows* and whether a row appears once or many times *does not matter*.
+- #### Projection: Choice of Columns:
+	- ![[Screenshot_20220628_004406.png|450]]
+- #### Selection: Choice of Rows:
+	- ![[Screenshot_20220628_004450.png|450]]
+- Can use **NOT, AND, OR** on atomic conditions, where a condition is:
+	- a comparison between two column names,
+	- a comparison between a column name and a constant
+- #### Cartesian Product:
+	- ![[Screenshot_20220628_005031.png|450]]
+- #### Union:
+	- ![[Screenshot_20220628_005153.png|450]]
+	- The *same -arity (number of columns)* should be *required*, otherwise the result is not a relation.
+- #### Difference:
+	- ![[Screenshot_20220628_005532.png|450]]
+- #### Intersection:
+	- ![[Screenshot_20220628_005956.png|450]]
+- #### Relational Algebra Using Standard Relational Algebra Mathematical Notation:
+	- ##### π Projection: Choice of Columns:
+		- ![[Screenshot_20220628_022425.png|350]]
+	- ##### σ: Selection: Choice Of Rows:
+		- ![[Screenshot_20220628_022504.png|350]]
+	- ##### x: Cartesian Product:
+		- ![[Screenshot_20220628_022538.png|350]]
+	- ##### Example:
+		- ![[Screenshot_20220628_022626.png|350]]

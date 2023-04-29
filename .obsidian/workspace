@@ -1,0 +1,127 @@
+{
+  "main": {
+    "id": "24f1acae574d3682",
+    "type": "split",
+    "children": [
+      {
+        "id": "675451a12fd6f403",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Semester 5/Information Retrieval/Information Retrieval.md",
+            "mode": "preview",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cb91366adc26ffe5",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "bf1aadded4cbc3cb",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "7772279858e7ce79",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "e5ff7e840f7c9dc3",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "f38ec05f6ce5720c",
+        "type": "leaf",
+        "state": {
+          "type": "starred",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "a33620cffc01156a",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "c5f966d2c4c0c46d",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Semester 5/Information Retrieval/Information Retrieval.md",
+            "collapseAll": true,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "9c669f9864028656",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Semester 5/Information Retrieval/Information Retrieval.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "91cf0798d7658ac6",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Semester 5/Information Retrieval/Information Retrieval.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 2
+  },
+  "active": "675451a12fd6f403",
+  "lastOpenFiles": [
+    "Semester 5/Information Retrieval/Lecture Notes/Lecture 5 (Feedback Models).md",
+    "Semester 5/Information Retrieval/Lecture Notes/Lecture 6 (Implementation).md",
+    "Semester 5/Information Retrieval/Lecture Notes/Lecture 7 (System Evaluation).md",
+    "Semester 5/Information Retrieval/Lecture Notes/Lecture 8 (User Evaluation).md",
+    "Semester 5/Information Retrieval/Lecture Notes/Lecture 4 (Retrieval Models Part 2).md",
+    "Semester 5/Information Retrieval/Lecture Notes/Lecture 3 (Retrieval Models Part 1).md",
+    "Semester 5/Information Retrieval/Lecture Notes/Lecture 2 (Text Data Access).md",
+    "Semester 5/Information Retrieval/Lecture Notes/Lecture 1 (Introduction).md"
+  ]
+}

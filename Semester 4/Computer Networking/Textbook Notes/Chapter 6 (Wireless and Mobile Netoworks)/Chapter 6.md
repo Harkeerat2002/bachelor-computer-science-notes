@@ -1,0 +1,25 @@
+# IEEE 802.11 Architecture
+- wireless host communicates with base station
+	- **base station = access point (AP)**
+- **Basic Service Set (BSS)** (aka "cell") in infrastructure mode contains"
+	- wireless hosts
+	- access point (AP): base statiob
+	- ad hoc mode: host only
+- spectrum divided into channels at different frequencies.
+- arriving host: must **associate** with an AP
+	- scan channels, listening for beacon framses containing AP's name (SSID) and MAC address
+- 802.11: CSMA - sense before transmitting
+- 802.11: no collision detection
+	- difficult to sense collisions: high transmitting, weak received signal due to fading
+	- can't sense all collisions in any case: hidden terminal, fading
+	- goal: **avoid collisions:** CSMA/**C**ollision**A**voidance
+- **Advanced capabilities:**
+	- Rate Adaptation
+	- Power Management
+- It is a media access control and physical layer specification.
+- Extends with common wired Ethernet local network into wirless domain
+- **IEEE 802.11's MAC:**
+	- Basic Techniques
+		- Acknowledgments
+		- Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA)
+		- RTC/CTC handshake

@@ -1,0 +1,232 @@
+{
+  "main": {
+    "id": "ba08d2b92e114622",
+    "type": "split",
+    "children": [
+      {
+        "id": "b969817f97d8d79f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cfc470993121118f",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Table of Contents.md",
+                "mode": "preview",
+                "source": false
+              },
+              "pinned": true
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2a6d2165ffe3c842",
+    "type": "split",
+    "children": [
+      {
+        "id": "91806d42f92a755a",
+        "type": "tabs",
+        "dimension": 31.568998109640834,
+        "children": [
+          {
+            "id": "0bba459c09ed16ea",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "4c3b9ffd47d09b0e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "Photos%5C",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "455e821228aa6d3a",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "4e256d171dabd798",
+        "type": "tabs",
+        "dimension": 68.43100189035917,
+        "children": [
+          {
+            "id": "3a21860bec584fc8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 265.5
+  },
+  "right": {
+    "id": "dbcf209aaa7e6c7a",
+    "type": "split",
+    "children": [
+      {
+        "id": "fe004d904a68a359",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f8f7b41cffa5273c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Table of Contents.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6e770ecc9163c257",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Table of Contents.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6c26d2b7623f94a7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d9b8418280e4dca6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Table of Contents.md"
+              }
+            }
+          },
+          {
+            "id": "fd395c58fa7f1e44",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "daily-notes:Open today's daily note": false,
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "graph:Open graph view": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "remotely-save:Remotely Save": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "dbfolder:Create a new database table": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "cfc470993121118f",
+  "lastOpenFiles": [
+    "Semester 2/Semester 2.md",
+    "Table of Contents.md",
+    "Semester 1/Computer Architecture.md",
+    "Semester 2/Programming Fundamentals 2/Programming Fundamentals 2.md",
+    "Semester 2/Discreate Structures/Discreate Structures.md",
+    "Semester 2/Discreate Structures/Photos/XOR.png",
+    "Semester 2/Discreate Structures/Photos/way.png",
+    "Semester 2/Discreate Structures/Photos/Symmetry.png",
+    "Semester 2/Discreate Structures/Photos/symmetricDifference.png",
+    "Semester 2/Discreate Structures/Photos/surjectiveFunction.png",
+    "Semester 2/Discreate Structures/Photos/subset.png",
+    "Semester 2/Discreate Structures/Photos/semanticEquivalence.png",
+    "Semester 2/Discreate Structures/Photos/semanticBehavior.png",
+    "Semester 2/Discreate Structures/Photos/redBlackTrees.png",
+    "Semester 2/Discreate Structures/Photos/proposition.png",
+    "Semester 2/Discreate Structures/Photos",
+    "Photos/composedProposition.png.md",
+    "Photos",
+    "Semester 2/Algorithms and Data Structure/Algorithms and Data Structure.md",
+    "Semester 6/Information Technology in Practice/Information Technology in Practice.md",
+    "Semester 5/Information Retrieval/Lecture Notes/Lecture 3 (Retrieval Models Part 1).md",
+    "Semester 5/Information Retrieval/Information Retrieval.md",
+    "Semester 5/Information Retrieval/Lecture Notes/Lecture 4 (Retrieval Models Part 2).md",
+    "Semester 6/Information Technology in Practice/Lecture Notes/Lecture 02 (Economics 1).md",
+    "Semester 5/Algorithms & Data Structures 2/Assignments/Assignment 2.md",
+    "Semester 5/Algorithms & Data Structures 2/Algorithms & Data Structures 2.md",
+    "Semester 6/Information Technology in Practice/Lecture Notes/Lecture 1 (Introduction).md",
+    "Excalidraw/Scripts/Downloaded",
+    "Excalidraw/Scripts",
+    "Semester 6/Semester 6.md",
+    "Semester 6/Bachelor Project/Bachelor Project.md",
+    "Semester 6/Bachelor Project/Chat GPT Prompt Research.md",
+    "Semester 5/Algorithms & Data Structures 2/Assignments/Assignment 3.md",
+    "Semester 5/Computer Graphics/Computer Graphics.md",
+    "Excalidraw/algoassignment4b.md",
+    "Semester 6/Visualization, Simulation and Interaction - Virtual Reality I/Visualization, Simulation and Interaction - Virtual Reality I.md",
+    "Semester 5/Computer Graphics/Lecture Notes/Lecture 2 (Raytracing Basics).md",
+    "Semester 5/Computer Graphics/Lecture Notes/Lecture 3 (Lighting Models).md",
+    "Semester 5/Experimentation & Evaluation/Experimentation & Evaluation.md",
+    "Semester 6/Autonomous Mobile Robots/Autonomous Mobile Robots.md",
+    "Semester 6/Visualization, Simulation and Interaction - Virtual Reality I/Chapter-Notes",
+    "GoodNotes/USI/Sem-6/Information Technology in Practice.pdf",
+    "GoodNotes/USI/Sem-1/Programming Fundamentals/Programming Fundamentals Notes.goodnotes",
+    "GoodNotes/USI/Sem-6/Introduction To Machine Learning/Machine Learning Online Notes.pdf",
+    "GoodNotes/USI/Sem-1/Computer Architecture/Computer Architecture Notion Notes.goodnotes",
+    "GoodNotes/USI/Sem-6/Introduction To Machine Learning/Introduction To Machine Learning.pdf",
+    "Untitled.canvas"
+  ]
+}

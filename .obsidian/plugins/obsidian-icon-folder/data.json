@@ -1,0 +1,32 @@
+{
+  "settings": {
+    "migrated": true,
+    "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
+    "fontSize": 16,
+    "emojiStyle": "none",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "IbPencil",
+      "IbStatement",
+      "IbRectangleOnRectangleHorizontal",
+      "FabDrupal",
+      "FabCritical-role"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    }
+  },
+  "Semester 2": "IbStatement",
+  "Semester 4": "IbStatement",
+  "Semester 5": "IbStatement",
+  "Excalidraw": "FabDrupal",
+  "Table of Contents.md": "IbRectangleOnRectangleHorizontal",
+  "GoodNotes": "IbPencil",
+  "Semester 6": "IbStatement",
+  "Semester 1": "IbStatement"
+}

@@ -1,0 +1,71 @@
+# Unit 5
+- #### Multisets:
+	- They are **sets** but with not repeated rows.
+- #### Nulls:
+	- Each domain is argumented with a **NULL**.
+	- *Any comparison in which one side is NULL is unknown.*
+- #### Typical Queries:
+- #### Division:
+	- *** INTO**
+	- 
+- #### Joins:
+	- SQL has a variety of *modified* Cartesian Products, called **joins**.
+	- The interesting ones are **outer joins**, interesting when there are no matches where the condition is equality:
+		- **Left outer join:**
+			- Includes all rows from the first table, matched or not, plus matching *pieces* from the *second* table, where applicable.
+			- ![[Screenshot_20220628_032015.png|300]]
+			- ![[Screenshot_20220628_031757.png|300]]
+		- **Right outer join:**
+			- Includes all rows from the second table, matched or not, plus matching *pieces* from the *first* table, where applicable
+			- ![[Screenshot_20220628_032032.png|300]]
+			- ![[Screenshot_20220628_031905.png|300]]
+		- **Full outer join:**
+			- ![[Screenshot_20220628_032047.png|300]]
+			- ![[Screenshot_20220628_031905 1.png|300]]
+	
+- #### Aggregates:
+	- Standard aggregate operators are:
+		- **SUM:** Computes the sum.
+		- **AVG:** Computes the average.
+		- **MAX:** Computes the Maximum.
+		- **MIN:** Computes the Minimum.
+		- **COUNT:** Computes the count (the number of)
+	- Modifiers to aggregate operators:
+		- **ALL**: Default, do not remove duplicates.
+		- **DISTINCT:** Remove duplicates
+		- **COUNT:** can also have * specified, to count the number of tuples, without removing duplicates.
+- #### Duplicates:
+	- In order to remove *duplicates*, the following operations are used:
+		- **UNION**
+		- **MINUS**
+		- **INTERSECT**
+	- The following operations *don't* remove *duplicates*
+		- **UNION ALL**
+		- **MINUS ALL**
+		- **INTERSECT ALL**
+	- **DISTINCT** removes duplicates from the result.
+	- **UNIQUE** is true if there are duplicates in the answer, but there could be several tuples, as long as all are different.
+	- **Not UNIQUE** is true if there are duplicates in the answer.
+- #### Subqueries:
+	- In a *SELECT* statement, the *WHERE* clause can refer to a result of another query, thought of as an "*inner loop*," referred to as **subquery**.
+	- ![[Screenshot_20220628_030753.png|200]]
+	- Subquery could return a set of values, that is, relations with more than one row in general. Operators are used to compare a single value with a set of values. The two keywords are **ANY** and **ALL**.
+		- **= ANY:**
+			- Equal to at least one element in the result of the subquery.
+		- **<> ALL:**
+			- Different from every element in the subquery.
+		- **<> ANY:**
+			- Not equal to at least one element in the subquery.
+		- **= ALL:**
+			- Equal to every element in the result of the subquery (so if the subquery has two distinct elements in the output, this will be false)
+- #### Testing for Emptiness:
+	- It is possible to test whether the result of a subquery is an empty relation by means of the operator **EXISTS**.
+	- **EXISTS R** is true if and only if R is not empty.
+	- **NOT EXISTS R** is true if and only if R is empty.
+- #### Insertion:
+	- ![[Screenshot_20220628_032304.png|300]]
+- #### Deletion:
+	- ![[Screenshot_20220628_032325.png|300]]
+	- This removes all the rows of a table, leaving an empty table; but the table remains.
+- #### Update:
+	- ![[Screenshot_20220628_032426.png|300]]

@@ -1,0 +1,21 @@
+# Unit 9
+- #### ACID Properties:
+	- **Transaction** is an execution of a user's program.
+	- In the **cleanest and most important** model, a transaction is supposed to satisfy the **ASCID** conditions.
+	- ![[Pasted image 20220629142749.png|450]]
+- #### Need For Recovery:
+	- The job of recovery is to make sure that the transaction satisfies **ACD** properties, **I** is left to concurrency.
+	- **Storage Model:**
+		- RAM (Volatile Storage)
+		- DISK (Stable Storage)
+	- **Failure:**
+		- RAM Failure
+		- Transaction Failure -> ABORT
+- #### History (Schedule):
+- #### Recoverable Histories:
+- #### Cascading Aborts:
+- #### Strict Histories:
+- #### Write ahead log:
+- #### Algorithm for Recovery:
+- #### Check pointing:
+- #### SQL Support:
