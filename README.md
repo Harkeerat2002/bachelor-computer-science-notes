@@ -1,5 +1,6 @@
 # Computer Science Notes
 **Harkeerat Singh Sawhney**
+
 This repo contains mostly all the notes which I have taken during my Computer Science course at the USI Lugano. I hope you find them useful. If you have any questions, feel free to contact me. So far this repo contains notes for the years from 2020 to 2023. In my last semester I have taken exchange in ETH Zurich, so the structure of the notes is a bit different. I have also yet to include the notes from Semester 3 and the first half of Semester 6.
 
 ## How to use them
